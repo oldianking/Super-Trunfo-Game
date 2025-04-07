@@ -11,7 +11,7 @@ int main(){
     char cidade2[50], estado2[2], codigo2[3];
 
         // Boas vindas ao jogo Super Trunfo de Estados.
-    printf("\n--- BEM-VINDO(A) AO GAME SUPER TRUNFO DE ESTADOS! ---\n");
+    printf("\n--- BEM-VINDO(A) AO GAME SUPER TRUNFO DE PAÍSES! ---\n");
 
         // Forneça os dados da primeira carta.
     printf("\nPOR FAVOR, FORNEÇA OS DADOS DA PRIMEIRA CARTA A SEGUIR.\n");
