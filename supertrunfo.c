@@ -10,7 +10,7 @@ int main(){
     float area2, pib2;
     char cidade2[50], estado2[2], codigo2[3];
 
-        // Boas vindas ao jogo Super Trunfo de Estados.
+        // Boas vindas ao jogo Super Trunfo de Países.
     printf("\n--- BEM-VINDO(A) AO GAME SUPER TRUNFO DE PAÍSES! ---\n");
 
         // Forneça os dados da primeira carta.
