@@ -3,11 +3,11 @@
 int main(){
     // Variáveis da Primeira Carta.
     int populacao, pontos;
-    float area, pib;
+    float area, pib, densidade, per_capita;
     char cidade[50], estado[2], codigo[3];
     // Variáveis da Segunda Carta.
     int populacao2, pontos2;
-    float area2, pib2;
+    float area2, pib2, densidade2, per_capita2;
     char cidade2[50], estado2[2], codigo2[3];
 
         // Boas vindas ao jogo Super Trunfo de Países.
@@ -37,6 +37,11 @@ int main(){
 
     printf("Quantos pontos turisticos tem sua cidade?\n");
     scanf("%d", &pontos);
+
+    // Cálculo de densidade populacional E PIB per capita.
+    densidade = populacao / area;
+    per_capita = pib / populacao;
+
     printf("\n------------------------------------------------------\n");
 
         // Fornecer os dados da Segunda Carta.
@@ -65,6 +70,11 @@ int main(){
     
     printf("Quantos pontos turisticos tem sua cidade?\n");
     scanf("%d", &pontos2);
+    
+    // Cálculo de densidade populacional E PIB per capita.
+    densidade2 = populacao2 / area2;
+    per_capita2 = pib2 / populacao2;
+    
 
     // Exibir os dados da Carta 1.
     printf("\n--- DADOS DA CARTA 1 ---\n");
@@ -73,8 +83,10 @@ int main(){
     printf("\nCidade: %s.", cidade);
     printf("\nPopulação: %d milhões.", populacao);
     printf("\nÁrea: %.2fkm².", area);
-    printf("\nPIB: %.2f\n bilhões.", pib);
+    printf("\nPIB: %.2f\n milhões.", pib);
     printf("\nPontos turísticos: %d.", pontos);
+    printf("\nDensidade populacional: %.2f.", densidade);
+    printf("\nPIB per Capita: %.2f.", per_capita);
     printf("\n--- FIM DOS DADOS DA CARTA 1 ---\n");
     printf("------------------------------------");
 
@@ -85,8 +97,10 @@ int main(){
     printf("\nCidade: %s.", cidade2);
     printf("\nPopulação: %d milhões.", populacao2);
     printf("\nÁrea: %.2fkm².", area2);
-    printf("\nPIB: %.2f bilhões.", pib2);
+    printf("\nPIB: %.2f milhões.", pib2);
     printf("\nPontos turísticos: %d.", pontos2);
+    printf("\nDensidade populacional: %.2f.", densidade2);
+    printf("\nPIB per Capita: %.2f.", per_capita2);
     printf("\n--- FIM DOS DADOS DA CARTA 2 ---\n");
 
 
